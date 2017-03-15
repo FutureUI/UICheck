@@ -1,5 +1,10 @@
 # uiCheck
 
+-无需javascript和图片文件
+-简单统一的dom结构
+-多套定制皮肤样式
+-基于SASS开发，可深度定制
+
 ### 1.引入css文件
 
 <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;uicheck-normal.css&quot; type=&quot;text/css&quot;&gt;</code></pre>
@@ -40,7 +45,9 @@
 	&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 
-可将<pre><code><b>&#10004;</b></code></pre>替换为<pre><code><span>文字</span></code></pre>，以便用文字来代替符号显示。
+可将<pre><code>&lt;b&gt;&amp;#10004;&lt;/b&gt;
+	&lt;b&gt;&amp;#10005;&lt;/b&gt;</code></pre>替换为<pre><code>&lt;span&gt;&amp;#10004;&lt;/span&gt;
+	&lt;span&gt;&amp;#10005;&lt;/span&gt;</code></pre>以便用文字来代替符号显示。
 
 ### 5.选中状态(checked)和只读状态(disabled)
 
