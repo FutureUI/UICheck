@@ -1,0 +1,243 @@
+
+$size:16px; 	
+
+$border-color:#999;
+
+$border-checked-color:#666;
+
+$border-disabled-color:#ccc;
+
+$content-checked-color:#333;
+
+$content-disabled-color:#999;
+
+.ui-check{
+
+	width:$size;height:$size;
+
+	/*radio*/
+
+	> input[type="radio"]{display:none;}
+	> input[type="radio"] + label{
+		position:relative;
+		display:block;
+		width:100%;height:100%;
+		padding: 0;
+		background: #fff;
+		border-radius: 100%;
+		vertical-align: top;
+		border:1px solid $border-color;
+		box-sizing: border-box;
+
+		transition: all 0.2s ease;
+		cursor:pointer;
+	}
+
+	> input[type="radio"] + label:after{
+		position: absolute;
+		top:3px;left:3px;right:3px;bottom:3px;
+
+		content:' ';
+		display:block;
+		
+		border-radius: 100%;
+		background: $content-checked-color;		
+		transform: scale(0, 0);
+		transition: all 0.2s ease;
+
+	}
+
+	input[type="radio"]:checked   {
+		+ label{border-color: $border-checked-color;}
+		+ label:after{
+			transform: scale(1, 1);
+		}
+	}
+
+	input[type="radio"]:disabled   {
+		+ label{border-color: $border-disabled-color;}
+		
+	}
+	input[type="radio"]:disabled:checked{
+		+ label:after{
+			background:$content-disabled-color;
+			transform: scale(1, 1);
+		}
+	}
+
+
+	/*checkbox*/
+
+
+	> input[type="checkbox"]{display:none;}
+	> input[type="checkbox"] + label{
+		position:relative;
+		display:block;
+		width:100%;height:100%;
+		padding: 0;
+		background: #fff;
+		border-radius: 3px;
+		vertical-align: top;
+		border:1px solid $border-color;
+		box-sizing: border-box;
+		transition: all 0.2s ease;
+		cursor:pointer;
+
+	}
+	
+	>input[type="checkbox"] + label:after{
+		position: absolute;
+		top:-6px;left:1px;right:0;bottom:0;
+
+		content:'\2714';
+		display:block;
+		font-weight:normal;
+		line-height: $size + 4 ;font-size:$size + 4;color:$content-checked-color;
+		text-align:center;
+		transform:scale(0,0);
+		transition: all 0.2s ease;
+
+	}
+
+	input[type="checkbox"]:checked   {
+		+ label{border-color:$border-checked-color;}
+
+		+ label:after{
+			background-size: 100% 100%;
+			transform:scale(1,1);
+		}
+	}
+
+	input[type="checkbox"]:disabled   {
+		+ label{border-color: $border-disabled-color;}
+		
+	}
+	input[type="checkbox"]:disabled:checked{
+		+ label:after{
+			color:$content-disabled-color;
+			transform: scale(1, 1);
+		}
+	}
+}
+
+
+/*switch*/
+
+$s-border-color:#999;
+
+$s-border-checked-color:#999;
+
+$s-border-disabled-color:#ccc;
+
+$s-content-color:#999;
+
+$s-content-checked-color:#333;
+
+$s-content-disabled-color:#999;
+
+$s-btn-color:#aaa;
+
+$s-btn-checked-color:#666;
+
+$s-btn-disabled-color:#ddd;
+
+
+.ui-switch{
+	
+	display:block;
+
+	> input{
+		display: none;
+	}
+
+	> label  {
+		display:block;
+		position: relative;z-index: 2;
+		vertical-align: top;
+		width: 64px;
+		height: 30px;
+		padding:0 2px;
+		border-radius: 15px;
+		cursor: pointer;
+		overflow: hidden;
+		background: #fff;
+		transition: background 0.3s ease;
+		
+		border:1px solid $s-border-color;
+		box-sizing: border-box;
+
+
+		> span,
+		> b{
+			display:block;
+			position:absolute;top:0;left:0;right:0;
+			padding:0 20px 0 0;
+			opacity:0;
+
+			line-height:28px;
+			font-size:12px;color:$s-content-checked-color;
+			text-align:center;
+			transition:opacity ease-out .3s;
+		}
+		> b{
+			font-size:16px;
+		}
+
+		> span:last-child,
+		> b:last-child{padding:0 0 0 20px;opacity:1;color:$s-content-color;}
+
+	}
+
+	> label:before{
+		content: " ";
+		width: 20px ;
+		height: 20px;
+		border-radius: 50%;
+		display: block;
+		position: absolute;
+		overflow: hidden;
+		z-index: 3;
+		left: 5px;
+		top: 4px;
+		transition: transform 0.3s ease;
+		background:$s-btn-color;
+	}
+
+
+	> input:checked  {
+
+		+ label{
+
+			border-color:$s-border-checked-color;
+
+			> span:first-child{opacity:1;}
+			> span:last-child{opacity:0;}
+
+			> b:first-child{opacity:1;}
+			> b:last-child{opacity:0;}
+		}
+
+		+ label:before{
+			background:$s-btn-checked-color;
+			transform: translateX( 32px);	
+		}
+
+
+	}
+
+	>input:disabled{
+		+ label{
+			border-color:$s-border-disabled-color;
+
+			>span,>b{
+				color:$s-content-disabled-color;
+			}
+		}
+		+ label:before{
+			background:$s-btn-disabled-color;
+		}
+	}
+
+}
+
+
