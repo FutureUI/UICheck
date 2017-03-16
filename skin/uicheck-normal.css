@@ -109,7 +109,7 @@
     background: #fff;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
-    border: 2px solid #aaa;
+    border: 2px solid #ccc;
     box-sizing: border-box; }
     .ui-switch > label > span,
     .ui-switch > label > b {
