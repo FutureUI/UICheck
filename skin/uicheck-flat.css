@@ -102,7 +102,7 @@
     background: #fff;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
-    border: 3px solid #ccc;
+    border: 2px solid #ccc;
     box-sizing: border-box; }
     .ui-switch > label > span,
     .ui-switch > label > b {
@@ -113,7 +113,7 @@
       right: 0;
       padding: 0 20px 0 0;
       opacity: 0;
-      line-height: 24px;
+      line-height: 26px;
       font-size: 12px;
       color: #f60;
       text-align: center;
@@ -135,8 +135,8 @@
     position: absolute;
     overflow: hidden;
     z-index: 3;
-    left: 3px;
-    top: 2px;
+    left: 4px;
+    top: 3px;
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;

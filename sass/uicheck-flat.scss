@@ -155,7 +155,7 @@ $s-btn-disabled-color:#ddd;
 		background: #fff;
 		transition: background 0.3s ease;
 		
-		border:3px solid $s-border-color;
+		border:2px solid $s-border-color;
 		box-sizing: border-box;
 
 
@@ -166,7 +166,7 @@ $s-btn-disabled-color:#ddd;
 			padding:0 20px 0 0;
 			opacity:0;
 
-			line-height:24px;
+			line-height:26px;
 			font-size:12px;color:$s-content-checked-color;
 			text-align:center;
 			transition:opacity ease-out .3s;
@@ -189,8 +189,8 @@ $s-btn-disabled-color:#ddd;
 		position: absolute;
 		overflow: hidden;
 		z-index: 3;
-		left: 3px;
-		top: 2px;
+		left: 4px;
+		top: 3px;
 		transition: transform 0.3s ease;
 		background:$s-btn-color;
 
