@@ -1,6 +1,6 @@
 
 
-# UI.Check
+# UICheck
 
 ## 简介
 UI.check是构建checkbox、radio、switch控件的用户体验增强解决方案。
