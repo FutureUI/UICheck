@@ -138,6 +138,7 @@
     z-index: 3;
     left: 4px;
     top: 3px;
+    background: #fff;
     transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;

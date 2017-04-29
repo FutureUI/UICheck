@@ -14,9 +14,9 @@ gulp.task('tocss', function () {
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(gulp.dest('./skin/'))
-        .pipe(gulp.dest('./doc/temp/skin/'));
+        .pipe(gulp.dest('./docs/temp/skin/'));
     gulp.src('./demo/*.html')
-    	.pipe(gulp.dest('./doc/temp/demo/'));
+    	.pipe(gulp.dest('./docs/temp/demo/'));
 
 });
 
