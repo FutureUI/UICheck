@@ -1,0 +1,48 @@
+
+nav > h2{
+    padding:0 0;
+    margin-bottom:20px;
+    border-bottom:1px dashed #ccc;
+    box-shadow:0 1px 0 #fff;
+}
+nav > h2 a{
+    display:block;
+    color:#333;
+    line-height:60px;
+    font-size:16px;font-weight:bold;
+    text-align:center;
+}
+nav > h2 a:hover{color:#08c;}
+nav > h2 .iconfont{font-size:30px;}
+
+nav > h4{
+    padding:5px 10px;
+    margin:10px 10px 0;
+    line-height:20px;color:#999;
+    font-size:14px;font-weight:normal;
+}
+nav ul li{
+    padding:0 10px;
+    overflow:hidden;text-overflow:ellipsis; 
+}
+nav ul li a{
+    padding:0 10px 0 25px;
+    display:block;
+    height:30px;overflow:hidden;
+    line-height:30px;font-size:14px;color:#333;
+    transition:all ease-out .3s;
+}
+nav ul li a .iconfont{
+    float:left;margin-right:5px;
+    font-size:24px;line-height:30px;color:#666;
+}
+
+nav ul li a:hover{
+    background:rgba(0,0,0,.1);
+}
+nav ul li a.on .iconfont{
+    color:#08c;
+}
+nav ul li a.on{
+    color:#08c;
+}

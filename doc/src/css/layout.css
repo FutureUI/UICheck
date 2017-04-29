@@ -1,0 +1,31 @@
+html{height:100%;}
+body{height:100%;background:#fff;}
+/*header{
+	position:relative;z-index:20;
+	height:60px;
+	background:#f1f1f1;
+	border-bottom:1px solid #ddd;
+	box-shadow:0 -1px 0 #fff inset;
+}*/
+.side{
+    position:fixed;
+    /*padding-top:60px;*/
+    top:0;left:0;bottom:0;
+    width:200px;
+    background:#fff;
+    /*border-right:1px dashed #ccc;*/
+    /*box-shadow:-1px 0 0 #fff inset;*/
+    box-shadow:1px 0 2px rgba(0,0,0,.4);
+}
+.main{
+    width:700px;min-height:100%;
+    margin-left:200px;
+    background:#fff;
+}
+
+.main section{
+    display:none;
+}
+.main section.on{
+    display:block;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>
+        UICheck
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="src/css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="src/css/code.css" rel="stylesheet" type="text/css"/>
+    <link href="src/css/layout.css" rel="stylesheet" type="text/css"/>
+    <link href="src/css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="src/css/article.css" rel="stylesheet" type="text/css"/>
+    <link href="src/css/iconfont/iconfont.css" rel="stylesheet" type="text/css" />
+    <style>
+    .demo{padding:30px 50px 200px;}
+    .demo-box{
+        position:relative;
+        margin-bottom:30px;
+        background:#fff;
+        /*border:1px dashed #ccc;*/
+        border-radius:5px;
+        box-shadow:0 1px 2px rgba(0,0,0,.4),
+            0 -1px 1px rgba(0,0,0,.2);
+    }
+    .demo iframe{
+        width:100%;height:240px;overflow:hidden;
+    }
+    .demo-box a{
+        position:absolute;top:0px;right:-40px;
+        display:block;
+        width:35px;
+        font-size:22px;line-height:35px;color:#333;
+        text-align:center;
+        text-shadow:0 1px 1px rgba(0,0,0,.2);
+        transition:all ease-out .3s;
+        border-radius:5px;
+        background:#fff;
+        box-shadow:0 1px 2px rgba(0,0,0,.5),
+            0 -1px 1px rgba(0,0,0,.2);
+    }
+    .demo-box a:hover{
+        color:#08c;
+        background:rgba(0,0,0,.1);
+    }
+    </style>
+</head>
+<body>
+    <div class="side">
+        <nav>
+            <h2><a href="javascript:void(0)" id="home">UI.Check</a></h2>
+            <h4>Document</h4>
+            <ul class="lists">
+                <li><a href="javascript:void(0)" id="page1"><span class="iconfont">&#xe60f;</span>使用说明</a></li>
+                <li><a href="javascript:void(0)" id="page2"><span class="iconfont">&#xe6bc;</span>皮肤下载</a></li>
+            </ul>
+            <h4>Github</h4>
+            <ul class="lists">
+                <li><a href="javascript:void(0)"><span class="iconfont">&#xe69f;</span>github</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <section data-for="home"><article data-file="1.md"></article></section>
+        <section data-for="page1"><article data-file="2.md"></article></section>
+        <section data-for="page2">
+            <div class="demo">
+                <div class="demo-box">
+                    <iframe src="temp/demo/normal.html"></iframe>
+                    <a target="_blank" href="temp/skin/uicheck-normal.css" class="iconfont">&#xe663;</a>
+                </div>
+                <div class="demo-box">
+                    <iframe src="temp/demo/cubical.html"></iframe>
+                    <a target="_blank" href="temp/skin/uicheck-cubical.css" class="iconfont">&#xe663;</a>
+                </div>
+                <div class="demo-box">
+                    <iframe src="temp/demo/flat.html"></iframe>
+                    <a target="_blank" href="temp/skin/uicheck-flat.css" class="iconfont">&#xe663;</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="src/js/marked.js" type="text/javascript"></script>
+    <script src="src/js/highlight.pack.js" type="text/javascript"></script>
+    <script src="src/js/script.js" type="text/javascript"></script>
+</body>
+</html>

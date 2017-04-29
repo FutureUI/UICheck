@@ -19,7 +19,7 @@ $size:18px;
 		vertical-align: top;
 		
 		background: #fff;
-		border:3px solid #ddd;
+		border:2px solid #999;
 		box-sizing: border-box;
 
 		transition: all 0.2s ease;
@@ -50,10 +50,10 @@ $size:18px;
 
 	input[type="radio"]:disabled   {
 		+ label{
-			border-color:#ddd;
+			border-color:#ccc;
 		}
 		+ label:after{
-			background:#ddd;
+			background:#ccc;
 		}
 		
 	}
@@ -72,7 +72,7 @@ $size:18px;
 		border-radius: 3px;
 		vertical-align: top;
 
-		background: #ccc;
+		background: #999;
 		box-sizing: border-box;
 
 		transition: all 0.2s ease;
@@ -106,7 +106,7 @@ $size:18px;
 
 	input[type="checkbox"]:disabled   {
 		+ label{
-			background:#eee;
+			background:#ccc;
 		}
 		
 	}
@@ -115,23 +115,23 @@ $size:18px;
 
 /*switch*/
 
-$s-border-color:#ccc;
+$s-border-color:#999;
 
 $s-border-checked-color:#f60;
 
-$s-border-disabled-color:#ddd;
+$s-border-disabled-color:#ccc;
 
-$s-content-color:#999;
+$s-content-color:#666;
 
 $s-content-checked-color:#f60;
 
 $s-content-disabled-color:#999;
 
-$s-btn-color:#aaa;
+$s-btn-color:#999;
 
 $s-btn-checked-color:#f60;
 
-$s-btn-disabled-color:#ddd;
+$s-btn-disabled-color:#ccc;
 
 
 .ui-switch{

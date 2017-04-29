@@ -1,0 +1,127 @@
+article {
+    font-family: Consolas, Monaco, 'Andale Mono', '微软雅黑';
+    padding: 30px 50px 300px;
+}
+/*格式*/
+article strong {font-weight:bold;}
+/*标题*/
+article>h1 {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 40px;
+    text-align: left;
+    border-bottom:1px dashed #ccc;
+}
+article>h2 {
+    position:relative;
+    padding-left:13px;
+    margin-top: 25px;
+    font-family: Consolas, Monaco, 'Andale Mono', '微软雅黑';
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 50px;
+}
+article>h2:after{
+    position:absolute;top:50%;left:0;
+    content: '';
+    height:24px;margin-top:-12px;
+    width:2px;
+    background:#999;
+}
+article>h3 {
+    margin-top: 15px;
+    font-family: Consolas, Monaco, 'Andale Mono', '微软雅黑';
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    color:#333;
+}
+
+/*列表*/
+article> ul{
+    padding:5px 0;
+}
+article> ul >li{
+    position:relative;
+    padding:0 0 0 20px;
+    font-size: 14px;
+    line-height: 24px;
+}
+article> ul >li:after{
+    position:absolute;
+    top:8px;left:9px;
+    content: '';
+    width:4px;height:4px;
+    background:#333;
+    border-radius:50%;
+}
+/*段落*/
+article>p {
+    padding: 3px 0;
+    font-size: 14px;color:#666;
+    line-height: 24px;
+}
+
+/*链接*/
+article a {
+    color: #08c;
+    transition: all ease-out .3s;
+}
+
+article a:hover {
+    color: #69c;
+}
+
+
+/*table*/
+article>table {
+    margin:10px 0;
+    width: 100%;
+}
+
+article>table th {
+    font-weight: bold;
+    background: #f1f1f1;
+}
+
+article>table th, article>table td {
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/*内嵌代码*/
+article li > code,
+article>p>code, article>table td>code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 14px;
+    color: #905;
+}
+/*代码块*/
+article>pre {
+    padding: 10px 0;
+    word-break: normal;
+}
+
+/*代码块滚动条*/
+.hljs::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+}
+
+.hljs::-webkit-scrollbar-track {
+    background-color: #ddd;
+    /*box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .4);*/
+}
+
+.hljs::-webkit-scrollbar-thumb {
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: #ddd;
+    box-shadow: 0 1px 0 #fff inset;
+}

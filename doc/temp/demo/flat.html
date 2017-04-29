@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> html5 增强计划 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="../reset.css" type="text/css">
+    <link rel="stylesheet" href="../skin/uicheck-flat.css" type="text/css">
+
+    <style type="text/css">
+
+    
+    	.demo-inner{
+    		position:relative;
+    		padding:20px 40px;
+    	}
+    	.demo-inner h2{
+    		position:absolute;top:20px;left:50px;
+    		line-height:30px;color:#999;
+    		font-size:16px;text-transform:uppercase;
+    	}
+    	.demoul{width:30%;padding-left:10px;padding-top:34px;float:left;}
+    	.demoul li{position:relative;height:40px;padding-left:24px;}
+    	.demoul:last-child{width:40%;padding-top:0;padding-left:30px;border-left:1px dashed #ccc;}
+    	.demoul:last-child li{padding-left:90px;height:50px;}
+    	.demoul li > label{cursor:pointer;font-size:14px;line-height:40px;color:#666;}
+    	.ui-check{position:absolute;top:12px;left:0;}
+    	.ui-switch{position:absolute;top:5px;left:0;}
+    	
+
+    </style>
+</head>
+<body>
+
+		<div class="demo-inner clearfix">
+			<h2>
+				<strong>flat</strong>
+			</h2>
+			<ul class="demoul">
+				<li>
+					<div class="ui-check"><input type="radio" name="radio"  id="ID11"><label for="ID11"></label></div>
+					<label for="ID11">radio</label>
+				</li>
+				<li>
+					<div class="ui-check"><input type="radio" name="radio" checked="checked" id="ID12"><label for="ID12"></label></div>
+					<label for="ID12">radio</label>
+				</li>
+				<li>
+					<div class="ui-check"><input type="radio" name="disabledradio" disabled="disabled" id="ID13"><label for="ID13"></label></div>
+					<label for="ID13">disabled</label>
+				</li>
+				<li>
+					<div class="ui-check"><input type="radio" name="disabledradio" disabled="disabled" checked="checked" id="ID14"><label for="ID14"></label></div>
+					<label for="ID14">disabled</label>
+				</li>
+			</ul>
+			<ul class="demoul">
+				<li>
+					<div class="ui-check"><input type="checkbox" name="checkbox"  id="ID15"><label for="ID15"></label></div>
+					<label for="ID15">checkbox</label>
+				</li>
+				<li>
+					<div class="ui-check"><input type="checkbox" name="checkbox" checked="checked" id="ID16"><label for="ID16"></label></div>
+					<label for="ID16">checkbox</label>
+				</li>
+				<li>
+					<div class="ui-check"><input type="checkbox" name="disabledcheckbox" disabled="disabled" id="ID17"><label for="ID17"></label></div>
+					<label for="ID17">disabled</label>
+				</li>
+				<li>
+					<div class="ui-check"><input type="checkbox" name="disabledcheckbox" disabled="disabled" checked="checked" id="ID18"><label for="ID18"></label></div>
+					<label for="ID18">disabled</label>
+				</li>
+			</ul>
+
+			<ul class="demoul">
+				<li>
+					<div class="ui-switch">
+						<input type="checkbox" id="ID00">
+						<label for="ID00">
+							<b>&#10004;</b>
+							<b>&#10005;</b>
+						</label>
+					</div>
+					<label for="ID00">switch</label>
+				</li>
+				<li>
+					<div class="ui-switch">
+						<input type="checkbox" id="ID01" checked="checked">
+						<label for="ID01">
+							<span>同意</span>
+							<span>拒绝</span>
+						</label>
+					</div>
+					<label for="ID01">switch</label>
+				</li>
+				<li>
+					<div class="ui-switch">
+						<input type="checkbox" id="ID02"  disabled="disabled">
+						<label for="ID02">
+							<b>&#10004;</b>
+							<b>&#10005;</b>
+						</label>
+					</div>
+					<label for="ID02">disabled</label>
+				</li>
+				<li>
+					<div class="ui-switch">
+						<input type="checkbox" id="ID03" checked="checked" disabled="disabled">
+						<label for="ID03">
+							<span>是</span>
+							<span>否</span>
+						</label>
+					</div>
+					<label for="ID03">disabled</label>
+				</li>
+			</ul>
+		</div>
+
+</body>
+</html>
+
