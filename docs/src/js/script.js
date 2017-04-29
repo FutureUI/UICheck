@@ -82,6 +82,8 @@
                 if (hash) {
                     id = hash.replace('#', '');
                     setPage(id);
+                }else{
+                    setPage('home');
                 }
             }
             readHash();
