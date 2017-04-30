@@ -25,6 +25,7 @@ body{height:100%;background:#fff;}
 
 .main section{
     display:none;
+    padding: 30px 50px 300px;
 }
 .main section.on{
     display:block;
