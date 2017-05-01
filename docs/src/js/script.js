@@ -42,6 +42,8 @@
     function completeAll() {
         count++;
         if (count == articles.length) {
+            var loader = document.querySelector('.loader');
+            loader.remove();
             var nav = document.querySelector('nav');
             var lists = nav.querySelectorAll('nav a');
             var sections = document.querySelectorAll('.main section');
